@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45BAF0D6E5BCBC148379D9C9 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAF25C7F877C8CBD5E7648 /* Background.png */; };
+		45BAF45BD4737162965FE3CC /* REDGuessingWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAFA00F2094527BE415369 /* REDGuessingWordsViewController.swift */; };
+		45BAF52DC9C02435A8764712 /* switch.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAFA8B0EBAA691BC51F863 /* switch.png */; };
+		45BAF5A4705A7524E96DF0F9 /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAFD4A06A50080D9CE89AC /* Button@2x.png */; };
+		45BAF5DA55F6EE2F307CBD87 /* InputBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAFA4F5CACB269C680218A /* InputBG.png */; };
+		45BAF5EA04CEBD208371E814 /* REDSelectLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF08D51727B047FEFCF2A /* REDSelectLanguageViewController.swift */; };
+		45BAF69707BC058332542E6A /* Background_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45BAFF01680206ED13BEC62D /* Background_2.jpg */; };
+		45BAF80DDDC9712F3E827FF7 /* REDUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF7829BF2B671465A8761 /* REDUserDefaults.swift */; };
+		45BAF8A3EFBDD446DB242C9E /* day_completed.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAF92E4DA4B49E40DA49EA /* day_completed.png */; };
+		45BAF99F5DBF49017AA2823B /* REDWordsConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF230E03326DD3F3E04EC /* REDWordsConfigManager.swift */; };
+		45BAF9C1B8578993B89EAAD9 /* REDAddWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAFB8A19E935A33692A5A4 /* REDAddWordsViewController.swift */; };
+		45BAFA7A17E5C79B836D8B97 /* REDAddWordsInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF72557F21C97140340A1 /* REDAddWordsInputView.swift */; };
+		45BAFAB0F00537E5E17F1E2C /* Background_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAFF3835DA9E25C253A138 /* Background_1.png */; };
+		45BAFAF56729BC31CEC9DF31 /* REDBasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAFF6A7D1C6594D42D7323 /* REDBasicButton.swift */; };
+		45BAFB7C4D44891211F53DE4 /* REDInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF043154145EEDC284383 /* REDInputView.swift */; };
+		45BAFCC9B233D23B8F113A3C /* InputBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAF508212D8B33C47A01D4 /* InputBG@2x.png */; };
+		45BAFD59F2C9609290A623DF /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAFA7901D90176DD126D1D /* Background@2x.png */; };
+		45BAFFA5F65CFFCB7193BAEB /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAFC86AE42DEDB1570422D /* Button.png */; };
+		488506F21B3335500068D65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488506F11B3335500068D65E /* AppDelegate.swift */; };
+		488506F41B3335500068D65E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488506F31B3335500068D65E /* ViewController.swift */; };
+		488506F71B3335500068D65E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488506F51B3335500068D65E /* Main.storyboard */; };
+		488506F91B3335500068D65E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 488506F81B3335500068D65E /* Images.xcassets */; };
+		488506FC1B3335500068D65E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 488506FA1B3335500068D65E /* LaunchScreen.xib */; };
+		488507081B3335500068D65E /* REDVocabularyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488507071B3335500068D65E /* REDVocabularyTests.swift */; };
+		48FCE3591B408AB40038AA9B /* REDInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FCE3581B408AB40038AA9B /* REDInputView.xib */; };
+		CA7D2EDFB88CA7FE211972DD /* libPods-REDVocabulary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F07B0AD661477B148DF9E3FE /* libPods-REDVocabulary.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		488507021B3335500068D65E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 488506E41B33354F0068D65E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488506EB1B3335500068D65E;
+			remoteInfo = REDVocabulary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		45BAF043154145EEDC284383 /* REDInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDInputView.swift; sourceTree = "<group>"; };
+		45BAF08D51727B047FEFCF2A /* REDSelectLanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDSelectLanguageViewController.swift; sourceTree = "<group>"; };
+		45BAF230E03326DD3F3E04EC /* REDWordsConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDWordsConfigManager.swift; sourceTree = "<group>"; };
+		45BAF25C7F877C8CBD5E7648 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		45BAF508212D8B33C47A01D4 /* InputBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InputBG@2x.png"; sourceTree = "<group>"; };
+		45BAF72557F21C97140340A1 /* REDAddWordsInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDAddWordsInputView.swift; sourceTree = "<group>"; };
+		45BAF7829BF2B671465A8761 /* REDUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDUserDefaults.swift; sourceTree = "<group>"; };
+		45BAF92E4DA4B49E40DA49EA /* day_completed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = day_completed.png; sourceTree = "<group>"; };
+		45BAFA00F2094527BE415369 /* REDGuessingWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDGuessingWordsViewController.swift; sourceTree = "<group>"; };
+		45BAFA4F5CACB269C680218A /* InputBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InputBG.png; sourceTree = "<group>"; };
+		45BAFA7901D90176DD126D1D /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
+		45BAFA8B0EBAA691BC51F863 /* switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch.png; sourceTree = "<group>"; };
+		45BAFB8A19E935A33692A5A4 /* REDAddWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDAddWordsViewController.swift; sourceTree = "<group>"; };
+		45BAFC86AE42DEDB1570422D /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		45BAFD4A06A50080D9CE89AC /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
+		45BAFF01680206ED13BEC62D /* Background_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background_2.jpg; sourceTree = "<group>"; };
+		45BAFF3835DA9E25C253A138 /* Background_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background_1.png; sourceTree = "<group>"; };
+		45BAFF6A7D1C6594D42D7323 /* REDBasicButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDBasicButton.swift; sourceTree = "<group>"; };
+		488506EC1B3335500068D65E /* REDVocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = REDVocabulary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		488506F01B3335500068D65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488506F11B3335500068D65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		488506F31B3335500068D65E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		488506F61B3335500068D65E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		488506F81B3335500068D65E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		488506FB1B3335500068D65E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		488507011B3335500068D65E /* REDVocabularyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = REDVocabularyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		488507061B3335500068D65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488507071B3335500068D65E /* REDVocabularyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REDVocabularyTests.swift; sourceTree = "<group>"; };
+		48FCE3581B408AB40038AA9B /* REDInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = REDInputView.xib; sourceTree = "<group>"; };
+		56401C2E240328C782C6552E /* Pods-REDVocabulary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-REDVocabulary.release.xcconfig"; path = "Pods/Target Support Files/Pods-REDVocabulary/Pods-REDVocabulary.release.xcconfig"; sourceTree = "<group>"; };
+		61DA4E507FF0C088F5C8E81C /* Pods-REDVocabulary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-REDVocabulary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-REDVocabulary/Pods-REDVocabulary.debug.xcconfig"; sourceTree = "<group>"; };
+		F07B0AD661477B148DF9E3FE /* libPods-REDVocabulary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-REDVocabulary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		488506E91B3335500068D65E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA7D2EDFB88CA7FE211972DD /* libPods-REDVocabulary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488506FE1B3335500068D65E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45BAF2286C6C9BB82C6D3ADE /* addWords */ = {
+			isa = PBXGroup;
+			children = (
+				45BAFB8A19E935A33692A5A4 /* REDAddWordsViewController.swift */,
+				45BAF72557F21C97140340A1 /* REDAddWordsInputView.swift */,
+			);
+			path = addWords;
+			sourceTree = "<group>";
+		};
+		45BAF65E543F609C95D09079 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45BAFA759A3F8C5F848B1CB1 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		45BAF669970C8A1FA833C200 /* files */ = {
+			isa = PBXGroup;
+			children = (
+				45BAF230E03326DD3F3E04EC /* REDWordsConfigManager.swift */,
+			);
+			path = files;
+			sourceTree = "<group>";
+		};
+		45BAFA240B0B6EA61324E53C /* selectingLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				45BAF08D51727B047FEFCF2A /* REDSelectLanguageViewController.swift */,
+			);
+			path = selectingLanguage;
+			sourceTree = "<group>";
+		};
+		45BAFA759A3F8C5F848B1CB1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				45BAFC86AE42DEDB1570422D /* Button.png */,
+				45BAFA8B0EBAA691BC51F863 /* switch.png */,
+				45BAFA4F5CACB269C680218A /* InputBG.png */,
+				45BAFD4A06A50080D9CE89AC /* Button@2x.png */,
+				45BAF25C7F877C8CBD5E7648 /* Background.png */,
+				45BAF508212D8B33C47A01D4 /* InputBG@2x.png */,
+				45BAFF3835DA9E25C253A138 /* Background_1.png */,
+				45BAFF01680206ED13BEC62D /* Background_2.jpg */,
+				45BAFA7901D90176DD126D1D /* Background@2x.png */,
+				45BAF92E4DA4B49E40DA49EA /* day_completed.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		45BAFC16AD5F9A3A6DA9E386 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				45BAFDA1483844DD1D55D60D /* buttons */,
+				45BAFF990AD965BA584E05B3 /* inputViews */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		45BAFDA1483844DD1D55D60D /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				45BAFF6A7D1C6594D42D7323 /* REDBasicButton.swift */,
+			);
+			path = buttons;
+			sourceTree = "<group>";
+		};
+		45BAFE7B3AA1FB0862233F37 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				45BAF7829BF2B671465A8761 /* REDUserDefaults.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		45BAFEE4FE980C8DD306BAA0 /* guessing */ = {
+			isa = PBXGroup;
+			children = (
+				45BAFA00F2094527BE415369 /* REDGuessingWordsViewController.swift */,
+			);
+			path = guessing;
+			sourceTree = "<group>";
+		};
+		45BAFEE5C74BDA8E11884B0C /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				45BAFC16AD5F9A3A6DA9E386 /* components */,
+				45BAF669970C8A1FA833C200 /* files */,
+				45BAFE7B3AA1FB0862233F37 /* models */,
+				45BAFA240B0B6EA61324E53C /* selectingLanguage */,
+				45BAF2286C6C9BB82C6D3ADE /* addWords */,
+				45BAFEE4FE980C8DD306BAA0 /* guessing */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		45BAFF990AD965BA584E05B3 /* inputViews */ = {
+			isa = PBXGroup;
+			children = (
+				45BAF043154145EEDC284383 /* REDInputView.swift */,
+				48FCE3581B408AB40038AA9B /* REDInputView.xib */,
+			);
+			path = inputViews;
+			sourceTree = "<group>";
+		};
+		488506E31B33354F0068D65E = {
+			isa = PBXGroup;
+			children = (
+				488506EE1B3335500068D65E /* REDVocabulary */,
+				488507041B3335500068D65E /* REDVocabularyTests */,
+				488506ED1B3335500068D65E /* Products */,
+				7382F81A06806C8D899479C8 /* Pods */,
+				E0F0762C7880B5BC43C4B219 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		488506ED1B3335500068D65E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				488506EC1B3335500068D65E /* REDVocabulary.app */,
+				488507011B3335500068D65E /* REDVocabularyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		488506EE1B3335500068D65E /* REDVocabulary */ = {
+			isa = PBXGroup;
+			children = (
+				488506F11B3335500068D65E /* AppDelegate.swift */,
+				488506F31B3335500068D65E /* ViewController.swift */,
+				488506F51B3335500068D65E /* Main.storyboard */,
+				488506F81B3335500068D65E /* Images.xcassets */,
+				488506FA1B3335500068D65E /* LaunchScreen.xib */,
+				488506EF1B3335500068D65E /* Supporting Files */,
+				45BAF65E543F609C95D09079 /* Resources */,
+				45BAFEE5C74BDA8E11884B0C /* modules */,
+			);
+			path = REDVocabulary;
+			sourceTree = "<group>";
+		};
+		488506EF1B3335500068D65E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				488506F01B3335500068D65E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		488507041B3335500068D65E /* REDVocabularyTests */ = {
+			isa = PBXGroup;
+			children = (
+				488507071B3335500068D65E /* REDVocabularyTests.swift */,
+				488507051B3335500068D65E /* Supporting Files */,
+			);
+			path = REDVocabularyTests;
+			sourceTree = "<group>";
+		};
+		488507051B3335500068D65E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				488507061B3335500068D65E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7382F81A06806C8D899479C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61DA4E507FF0C088F5C8E81C /* Pods-REDVocabulary.debug.xcconfig */,
+				56401C2E240328C782C6552E /* Pods-REDVocabulary.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E0F0762C7880B5BC43C4B219 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F07B0AD661477B148DF9E3FE /* libPods-REDVocabulary.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		488506EB1B3335500068D65E /* REDVocabulary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4885070B1B3335500068D65E /* Build configuration list for PBXNativeTarget "REDVocabulary" */;
+			buildPhases = (
+				190CC998E0299F83E15E9913 /* Check Pods Manifest.lock */,
+				488506E81B3335500068D65E /* Sources */,
+				488506E91B3335500068D65E /* Frameworks */,
+				488506EA1B3335500068D65E /* Resources */,
+				70C409ADDF91B22380269777 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = REDVocabulary;
+			productName = REDVocabulary;
+			productReference = 488506EC1B3335500068D65E /* REDVocabulary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		488507001B3335500068D65E /* REDVocabularyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4885070E1B3335500068D65E /* Build configuration list for PBXNativeTarget "REDVocabularyTests" */;
+			buildPhases = (
+				488506FD1B3335500068D65E /* Sources */,
+				488506FE1B3335500068D65E /* Frameworks */,
+				488506FF1B3335500068D65E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				488507031B3335500068D65E /* PBXTargetDependency */,
+			);
+			name = REDVocabularyTests;
+			productName = REDVocabularyTests;
+			productReference = 488507011B3335500068D65E /* REDVocabularyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		488506E41B33354F0068D65E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "MIGUEL MOLDES";
+				TargetAttributes = {
+					488506EB1B3335500068D65E = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					488507001B3335500068D65E = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 488506EB1B3335500068D65E;
+					};
+				};
+			};
+			buildConfigurationList = 488506E71B33354F0068D65E /* Build configuration list for PBXProject "REDVocabulary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 488506E31B33354F0068D65E;
+			productRefGroup = 488506ED1B3335500068D65E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				488506EB1B3335500068D65E /* REDVocabulary */,
+				488507001B3335500068D65E /* REDVocabularyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		488506EA1B3335500068D65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488506F71B3335500068D65E /* Main.storyboard in Resources */,
+				488506FC1B3335500068D65E /* LaunchScreen.xib in Resources */,
+				488506F91B3335500068D65E /* Images.xcassets in Resources */,
+				45BAFFA5F65CFFCB7193BAEB /* Button.png in Resources */,
+				45BAF52DC9C02435A8764712 /* switch.png in Resources */,
+				45BAF5DA55F6EE2F307CBD87 /* InputBG.png in Resources */,
+				45BAF5A4705A7524E96DF0F9 /* Button@2x.png in Resources */,
+				45BAF0D6E5BCBC148379D9C9 /* Background.png in Resources */,
+				45BAFCC9B233D23B8F113A3C /* InputBG@2x.png in Resources */,
+				45BAFAB0F00537E5E17F1E2C /* Background_1.png in Resources */,
+				45BAF69707BC058332542E6A /* Background_2.jpg in Resources */,
+				48FCE3591B408AB40038AA9B /* REDInputView.xib in Resources */,
+				45BAFD59F2C9609290A623DF /* Background@2x.png in Resources */,
+				45BAF8A3EFBDD446DB242C9E /* day_completed.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488506FF1B3335500068D65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		190CC998E0299F83E15E9913 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		70C409ADDF91B22380269777 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-REDVocabulary/Pods-REDVocabulary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		488506E81B3335500068D65E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488506F41B3335500068D65E /* ViewController.swift in Sources */,
+				488506F21B3335500068D65E /* AppDelegate.swift in Sources */,
+				45BAFAF56729BC31CEC9DF31 /* REDBasicButton.swift in Sources */,
+				45BAF99F5DBF49017AA2823B /* REDWordsConfigManager.swift in Sources */,
+				45BAF80DDDC9712F3E827FF7 /* REDUserDefaults.swift in Sources */,
+				45BAF5EA04CEBD208371E814 /* REDSelectLanguageViewController.swift in Sources */,
+				45BAF9C1B8578993B89EAAD9 /* REDAddWordsViewController.swift in Sources */,
+				45BAFA7A17E5C79B836D8B97 /* REDAddWordsInputView.swift in Sources */,
+				45BAFB7C4D44891211F53DE4 /* REDInputView.swift in Sources */,
+				45BAF45BD4737162965FE3CC /* REDGuessingWordsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488506FD1B3335500068D65E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488507081B3335500068D65E /* REDVocabularyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		488507031B3335500068D65E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 488506EB1B3335500068D65E /* REDVocabulary */;
+			targetProxy = 488507021B3335500068D65E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		488506F51B3335500068D65E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				488506F61B3335500068D65E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		488506FA1B3335500068D65E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				488506FB1B3335500068D65E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		488507091B3335500068D65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4885070A1B3335500068D65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4885070C1B3335500068D65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DA4E507FF0C088F5C8E81C /* Pods-REDVocabulary.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = REDVocabulary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4885070D1B3335500068D65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56401C2E240328C782C6552E /* Pods-REDVocabulary.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = REDVocabulary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4885070F1B3335500068D65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = REDVocabularyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/REDVocabulary.app/REDVocabulary";
+			};
+			name = Debug;
+		};
+		488507101B3335500068D65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = REDVocabularyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/REDVocabulary.app/REDVocabulary";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		488506E71B33354F0068D65E /* Build configuration list for PBXProject "REDVocabulary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				488507091B3335500068D65E /* Debug */,
+				4885070A1B3335500068D65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4885070B1B3335500068D65E /* Build configuration list for PBXNativeTarget "REDVocabulary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4885070C1B3335500068D65E /* Debug */,
+				4885070D1B3335500068D65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4885070E1B3335500068D65E /* Build configuration list for PBXNativeTarget "REDVocabularyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4885070F1B3335500068D65E /* Debug */,
+				488507101B3335500068D65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 488506E41B33354F0068D65E /* Project object */;
+}

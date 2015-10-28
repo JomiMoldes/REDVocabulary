@@ -1,0 +1,12 @@
+PODS:
+  - AsyncDisplayKit (1.2.1):
+    - AsyncDisplayKit/ASDealloc2MainObject
+  - AsyncDisplayKit/ASDealloc2MainObject (1.2.1)
+
+DEPENDENCIES:
+  - AsyncDisplayKit
+
+SPEC CHECKSUMS:
+  AsyncDisplayKit: b2f777da3a246b4aad660b2a55d60bb4328049b9
+
+COCOAPODS: 0.34.0
