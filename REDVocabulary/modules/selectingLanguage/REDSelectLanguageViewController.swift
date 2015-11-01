@@ -32,7 +32,12 @@ class REDSelectLanguageViewController : ViewController, UIPickerViewDataSource, 
         self.lngPicker.dataSource = self;
         self.lngPicker.delegate = self;
     }
-    
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
+    }
+
+
     func refreshOptions(){
         let defaults = REDUserDefaults.sharedInstance;
         self.languages = defaults.getLanguagesCombinations();

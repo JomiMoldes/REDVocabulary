@@ -10,6 +10,10 @@ import UIKit
     
     var view : UIView!
     
+    @IBOutlet weak var wordTextView: UITextView!
+    @IBOutlet weak var languageNameLabel: UILabel!
+    @IBOutlet weak var coverButton: UIButton!
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         xibSetup()
@@ -31,5 +35,8 @@ import UIKit
     }
 
 
+    @IBAction func coverButtonTouched(sender: AnyObject) {
+        print("touched")
+    }
 
 }

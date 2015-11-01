@@ -21,6 +21,7 @@
 		45BAFA7A17E5C79B836D8B97 /* REDAddWordsInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF72557F21C97140340A1 /* REDAddWordsInputView.swift */; };
 		45BAFAB0F00537E5E17F1E2C /* Background_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAFF3835DA9E25C253A138 /* Background_1.png */; };
 		45BAFAF56729BC31CEC9DF31 /* REDBasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAFF6A7D1C6594D42D7323 /* REDBasicButton.swift */; };
+		45BAFB0A0C3908E76D51A166 /* REDWordsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF42DEC25A6B804BA8C77 /* REDWordsParser.swift */; };
 		45BAFB7C4D44891211F53DE4 /* REDInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF043154145EEDC284383 /* REDInputView.swift */; };
 		45BAFCC9B233D23B8F113A3C /* InputBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAF508212D8B33C47A01D4 /* InputBG@2x.png */; };
 		45BAFD59F2C9609290A623DF /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAFA7901D90176DD126D1D /* Background@2x.png */; };
@@ -50,6 +51,7 @@
 		45BAF08D51727B047FEFCF2A /* REDSelectLanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDSelectLanguageViewController.swift; sourceTree = "<group>"; };
 		45BAF230E03326DD3F3E04EC /* REDWordsConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDWordsConfigManager.swift; sourceTree = "<group>"; };
 		45BAF25C7F877C8CBD5E7648 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		45BAF42DEC25A6B804BA8C77 /* REDWordsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDWordsParser.swift; sourceTree = "<group>"; };
 		45BAF508212D8B33C47A01D4 /* InputBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InputBG@2x.png"; sourceTree = "<group>"; };
 		45BAF72557F21C97140340A1 /* REDAddWordsInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDAddWordsInputView.swift; sourceTree = "<group>"; };
 		45BAF7829BF2B671465A8761 /* REDUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDUserDefaults.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				45BAF230E03326DD3F3E04EC /* REDWordsConfigManager.swift */,
+				45BAF42DEC25A6B804BA8C77 /* REDWordsParser.swift */,
 			);
 			path = files;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				45BAFA7A17E5C79B836D8B97 /* REDAddWordsInputView.swift in Sources */,
 				45BAFB7C4D44891211F53DE4 /* REDInputView.swift in Sources */,
 				45BAF45BD4737162965FE3CC /* REDGuessingWordsViewController.swift in Sources */,
+				45BAFB0A0C3908E76D51A166 /* REDWordsParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
