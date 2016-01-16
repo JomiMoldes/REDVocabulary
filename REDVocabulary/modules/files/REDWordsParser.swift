@@ -11,17 +11,24 @@ class REDWordsParser {
 
     init(){
         results = NSMutableArray()
-
     }
 
 
-    func parseWords (filePath : String) {
-        let jsonData : NSData? = NSData(contentsOfFile: filePath)
+    func parseWords (filePath : String) -> NSArray {
+        let content : String = ""
+        let fileContent : NSData = content.dataUsingEncoding(NSUTF8StringEncoding)!
+        let dir : String = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0]
+        let newDir : String = dir.stringByAppendingString(filePath)
+
+
+        guard let jsonData = NSData(contentsOfFile: newDir) else{
+            return NSArray()
+        }
 
         var jsonResult : NSDictionary = NSDictionary()
 
         do{
-            jsonResult = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+            jsonResult = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
         }catch{
             print("json error: \(error)")
         }
@@ -29,6 +36,7 @@ class REDWordsParser {
         let list : NSArray = jsonResult["words"] as! NSArray;
 
         self.results = NSMutableArray(array:list);
+        return self.results
 //        if([object isKindOfClass:[NSDictionary class]]) {
 //            NSDictionary *dic = object;
 //            NSArray *list = [dic objectForKey:@"words"];

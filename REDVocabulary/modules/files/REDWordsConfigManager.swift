@@ -4,43 +4,59 @@
 //
 
 import Foundation
+import UIKit
 
 class REDWordsConfigManager {
 
     static let sharedInstance = REDWordsConfigManager()
 
-    var filePath : String!;
+    let USER_DATA_DIRECTORY : String = "/RED"
 
-    func createLanguagesFile(name:String)->Bool{
+    private init(){
 
-        createFile(name);
+    }
+
+    func createFileForLanguages(principalLanguage:String, secondaryLanguage:String)->Bool{
+
+        createFile(getLanguagesFilePath())
         return true;
     }
 
     func createFile(name:String){
-        //var error : NSErrorPointer = nil;
-        let fm : NSFileManager = NSFileManager.defaultManager()
-        var content : String = ""
-        let fileContent : NSData = content.dataUsingEncoding(NSUTF8StringEncoding)!
-        let dir : String = NSSearchPathForDirectoriesInDomains(.CachesDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0]
-        let newDir : String = dir.stringByAppendingString("/RED")
-        self.filePath = newDir.stringByAppendingString(name);
-        
-        if !fm.fileExistsAtPath(newDir){
-            do{
-                try fm.createDirectoryAtPath(newDir, withIntermediateDirectories: true, attributes: nil)
-            }catch let error as NSError{
-                NSLog("Couldn't create directory");
-                NSLog("Error was code: %d - message: %s", error, error.localizedDescription);
-            }
-        }
+        let jsonManager : REDJSONFileManager = REDJSONFileManager();
+        jsonManager.createFile(name);
+        return
+    }
 
-        if !fm.fileExistsAtPath(self.filePath) {
-            if !fm.createFileAtPath(self.filePath, contents: fileContent, attributes: nil) {
-                NSLog("Couldn't create file");
-                NSLog("Error was code: %d - message: %s", errno, strerror(errno));
+    func saveWordsInFile(name:String, content:String){
+        let jsonManager : REDJSONFileManager = REDJSONFileManager();
+        jsonManager.updateFile(name, content:content);
+    }
+
+    func getLanguagesFilePath()->String{
+        let name = REDWordsModel.sharedInstance.principalLanguage + "_" + REDWordsModel.sharedInstance.secondaryLanguage;
+        let filePath: String = USER_DATA_DIRECTORY + "/mwords_" + name + ".json"
+        return filePath
+    }
+
+    func clearAllUserData(){
+        let fm : NSFileManager = NSFileManager.defaultManager()
+        var dir : String = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0]
+        dir = dir.stringByAppendingString(USER_DATA_DIRECTORY)
+        dir = dir.stringByAppendingString("/")
+
+        if let enumerator = fm.enumeratorAtPath(dir){
+            while let file = enumerator.nextObject() as? String{
+                do{
+                    let fileName = dir.stringByAppendingString(file)
+                    try fm.removeItemAtPath(fileName)
+                }catch let error as NSError{
+                    print("no se pudo remover el item: " + error.description)
+                }
             }
         }
     }
+
+
 
 }

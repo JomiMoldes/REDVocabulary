@@ -9,6 +9,10 @@ class REDUserDefaults {
 
     static let sharedInstance = REDUserDefaults()
 
+    private init(){
+
+    }
+
     func saveNewCombinations(name:NSString) -> Bool{
         let defaults = NSUserDefaults.standardUserDefaults();
 

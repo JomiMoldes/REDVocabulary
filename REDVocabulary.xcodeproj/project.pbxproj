@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		45BAF0D6E5BCBC148379D9C9 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAF25C7F877C8CBD5E7648 /* Background.png */; };
+		45BAF4589F262C302156FAD1 /* REDWordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF83379DBA3B8D2D9ABFA /* REDWordsModel.swift */; };
 		45BAF45BD4737162965FE3CC /* REDGuessingWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAFA00F2094527BE415369 /* REDGuessingWordsViewController.swift */; };
 		45BAF52DC9C02435A8764712 /* switch.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAFA8B0EBAA691BC51F863 /* switch.png */; };
 		45BAF5A4705A7524E96DF0F9 /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAFD4A06A50080D9CE89AC /* Button@2x.png */; };
@@ -25,6 +26,7 @@
 		45BAFB7C4D44891211F53DE4 /* REDInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF043154145EEDC284383 /* REDInputView.swift */; };
 		45BAFCC9B233D23B8F113A3C /* InputBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAF508212D8B33C47A01D4 /* InputBG@2x.png */; };
 		45BAFD59F2C9609290A623DF /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAFA7901D90176DD126D1D /* Background@2x.png */; };
+		45BAFF23E4EABB85AB7F5CC8 /* REDJSONFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAFEDEF5046087625D8F44 /* REDJSONFileManager.swift */; };
 		45BAFFA5F65CFFCB7193BAEB /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAFC86AE42DEDB1570422D /* Button.png */; };
 		488506F21B3335500068D65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488506F11B3335500068D65E /* AppDelegate.swift */; };
 		488506F41B3335500068D65E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488506F31B3335500068D65E /* ViewController.swift */; };
@@ -33,7 +35,7 @@
 		488506FC1B3335500068D65E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 488506FA1B3335500068D65E /* LaunchScreen.xib */; };
 		488507081B3335500068D65E /* REDVocabularyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488507071B3335500068D65E /* REDVocabularyTests.swift */; };
 		48FCE3591B408AB40038AA9B /* REDInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FCE3581B408AB40038AA9B /* REDInputView.xib */; };
-		CA7D2EDFB88CA7FE211972DD /* libPods-REDVocabulary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F07B0AD661477B148DF9E3FE /* libPods-REDVocabulary.a */; };
+		E4EE9CFD8C7F83F015AA3ECD /* Pods_REDVocabulary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE859287D336D173BB878F /* Pods_REDVocabulary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 		45BAF508212D8B33C47A01D4 /* InputBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InputBG@2x.png"; sourceTree = "<group>"; };
 		45BAF72557F21C97140340A1 /* REDAddWordsInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDAddWordsInputView.swift; sourceTree = "<group>"; };
 		45BAF7829BF2B671465A8761 /* REDUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDUserDefaults.swift; sourceTree = "<group>"; };
+		45BAF83379DBA3B8D2D9ABFA /* REDWordsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDWordsModel.swift; sourceTree = "<group>"; };
 		45BAF92E4DA4B49E40DA49EA /* day_completed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = day_completed.png; sourceTree = "<group>"; };
 		45BAFA00F2094527BE415369 /* REDGuessingWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDGuessingWordsViewController.swift; sourceTree = "<group>"; };
 		45BAFA4F5CACB269C680218A /* InputBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InputBG.png; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		45BAFB8A19E935A33692A5A4 /* REDAddWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDAddWordsViewController.swift; sourceTree = "<group>"; };
 		45BAFC86AE42DEDB1570422D /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
 		45BAFD4A06A50080D9CE89AC /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
+		45BAFEDEF5046087625D8F44 /* REDJSONFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDJSONFileManager.swift; sourceTree = "<group>"; };
 		45BAFF01680206ED13BEC62D /* Background_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background_2.jpg; sourceTree = "<group>"; };
 		45BAFF3835DA9E25C253A138 /* Background_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background_1.png; sourceTree = "<group>"; };
 		45BAFF6A7D1C6594D42D7323 /* REDBasicButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDBasicButton.swift; sourceTree = "<group>"; };
@@ -79,7 +83,7 @@
 		48FCE3581B408AB40038AA9B /* REDInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = REDInputView.xib; sourceTree = "<group>"; };
 		56401C2E240328C782C6552E /* Pods-REDVocabulary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-REDVocabulary.release.xcconfig"; path = "Pods/Target Support Files/Pods-REDVocabulary/Pods-REDVocabulary.release.xcconfig"; sourceTree = "<group>"; };
 		61DA4E507FF0C088F5C8E81C /* Pods-REDVocabulary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-REDVocabulary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-REDVocabulary/Pods-REDVocabulary.debug.xcconfig"; sourceTree = "<group>"; };
-		F07B0AD661477B148DF9E3FE /* libPods-REDVocabulary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-REDVocabulary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9EE859287D336D173BB878F /* Pods_REDVocabulary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_REDVocabulary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7D2EDFB88CA7FE211972DD /* libPods-REDVocabulary.a in Frameworks */,
+				E4EE9CFD8C7F83F015AA3ECD /* Pods_REDVocabulary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +127,7 @@
 			children = (
 				45BAF230E03326DD3F3E04EC /* REDWordsConfigManager.swift */,
 				45BAF42DEC25A6B804BA8C77 /* REDWordsParser.swift */,
+				45BAFEDEF5046087625D8F44 /* REDJSONFileManager.swift */,
 			);
 			path = files;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				45BAF7829BF2B671465A8761 /* REDUserDefaults.swift */,
+				45BAF83379DBA3B8D2D9ABFA /* REDWordsModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -279,7 +285,7 @@
 		E0F0762C7880B5BC43C4B219 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F07B0AD661477B148DF9E3FE /* libPods-REDVocabulary.a */,
+				B9EE859287D336D173BB878F /* Pods_REDVocabulary.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -296,6 +302,7 @@
 				488506E91B3335500068D65E /* Frameworks */,
 				488506EA1B3335500068D65E /* Resources */,
 				70C409ADDF91B22380269777 /* Copy Pods Resources */,
+				F027FE9372C73A00DA2F762A /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -425,6 +432,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-REDVocabulary/Pods-REDVocabulary-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F027FE9372C73A00DA2F762A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-REDVocabulary/Pods-REDVocabulary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -443,6 +465,8 @@
 				45BAFB7C4D44891211F53DE4 /* REDInputView.swift in Sources */,
 				45BAF45BD4737162965FE3CC /* REDGuessingWordsViewController.swift in Sources */,
 				45BAFB0A0C3908E76D51A166 /* REDWordsParser.swift in Sources */,
+				45BAFF23E4EABB85AB7F5CC8 /* REDJSONFileManager.swift in Sources */,
+				45BAF4589F262C302156FAD1 /* REDWordsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

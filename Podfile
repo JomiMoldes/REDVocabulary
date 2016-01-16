@@ -6,6 +6,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 target "REDVocabulary" do
 
 pod 'AsyncDisplayKit'
+pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+use_frameworks!
 
 end
 

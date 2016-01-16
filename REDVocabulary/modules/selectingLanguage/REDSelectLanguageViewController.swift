@@ -22,10 +22,17 @@ class REDSelectLanguageViewController : ViewController, UIPickerViewDataSource, 
     
     override func viewDidLoad() {
         let defaults = REDUserDefaults.sharedInstance;
-//        defaults.clearLanguagesCombinations();
+
+//        clearAllUserData(defaults)
+
         self.languages = defaults.getLanguagesCombinations();
         setupPicker()
         refreshOptions()
+    }
+
+    func clearAllUserData(defaults : REDUserDefaults){
+        REDWordsConfigManager.sharedInstance.clearAllUserData()
+        defaults.clearLanguagesCombinations();
     }
 
     func setupPicker(){
@@ -43,9 +50,14 @@ class REDSelectLanguageViewController : ViewController, UIPickerViewDataSource, 
         self.languages = defaults.getLanguagesCombinations();
 
         let hasLanguages = languages.count > 0;
-        self.addLngView.hidden = hasLanguages;
+        showAddLngViews(hasLanguages)
         showPicker(hasLanguages)
         self.lngPicker.reloadAllComponents();
+    }
+
+    func showAddLngViews(value:Bool){
+        self.addLngView.hidden = value;
+        self.cancelLngButton.hidden = !value;
     }
 
     func showPicker(value:Bool){
@@ -83,16 +95,16 @@ class REDSelectLanguageViewController : ViewController, UIPickerViewDataSource, 
             refreshOptions()
             return
         }
-        var name = NSString(format: "%@_%@", self.lng1TextField.text!, self.lng2TextField.text!);
-        var defaults = REDUserDefaults.sharedInstance;
+        let name = NSString(format: "%@_%@", self.lng1TextField.text!, self.lng2TextField.text!);
+        let defaults = REDUserDefaults.sharedInstance;
         defaults.saveNewCombinations(name)
-        
-        
-        var wordsConfigManager = REDWordsConfigManager.sharedInstance;
-        var fileName : String = NSString(format: "/mwords_%@.json", name) as String
-        wordsConfigManager.createLanguagesFile(fileName)
+
+        REDWordsModel.sharedInstance.principalLanguage = self.lng1TextField.text!
+        REDWordsModel.sharedInstance.secondaryLanguage = self.lng2TextField.text!
+
+        let wordsConfigManager = REDWordsConfigManager.sharedInstance;
+        wordsConfigManager.createFileForLanguages(self.lng1TextField.text!,secondaryLanguage: self.lng2TextField.text!)
         refreshOptions()
-        
     }
     
     @IBAction func onCancel(sender: UIButton) {
@@ -107,6 +119,18 @@ class REDSelectLanguageViewController : ViewController, UIPickerViewDataSource, 
         self.lng1TextField.text = "";
         self.lng2TextField.text = "";
         showPicker(false)
+    }
+
+    @IBAction func startAddingWords(sender: AnyObject) {
+        let name : String = pickerView(self.lngPicker, titleForRow: 0, forComponent: 0)
+        let names : Array = name.componentsSeparatedByString("_")
+        REDWordsModel.sharedInstance.principalLanguage = names[0];
+        REDWordsModel.sharedInstance.secondaryLanguage = names[1];
+
+        let storyBoard = UIStoryboard(name:"Main", bundle: nil);
+        let vc = storyBoard.instantiateViewControllerWithIdentifier("AddWordsView") as! UIViewController
+//        let nextView : REDAddWordsViewController = REDAddWordsViewController()
+        presentViewController(vc, animated: true, completion: nil)
     }
 
 }
