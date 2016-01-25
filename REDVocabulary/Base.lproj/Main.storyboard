@@ -210,6 +210,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="startButtonTouched:" destination="j5h-Kn-OxF" eventType="touchUpInside" id="HEO-TY-0TD"/>
                                             <segue destination="LJZ-a0-j9q" kind="show" id="dOs-ee-V4i"/>
                                         </connections>
                                     </button>
@@ -223,6 +224,9 @@
                                         <state key="normal" title="Add">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addButtonTouched:" destination="j5h-Kn-OxF" eventType="touchUpInside" id="NmZ-2y-6bs"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

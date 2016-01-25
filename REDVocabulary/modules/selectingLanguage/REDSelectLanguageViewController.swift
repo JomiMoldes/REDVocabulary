@@ -65,6 +65,22 @@ class REDSelectLanguageViewController : ViewController, UIPickerViewDataSource, 
         self.startButton.hidden = !value;
     }
 
+    func loadWordsSet(){
+        let dic:NSDictionary = REDWordsConfigManager.sharedInstance.getCurrentWordsSet()
+        REDWordsModel.sharedInstance.setupWords(dic)
+    }
+
+    func saveLanguagesSelected(names:NSArray){
+        REDWordsModel.sharedInstance.principalLanguage = names[0] as! String;
+        REDWordsModel.sharedInstance.secondaryLanguage = names[1] as! String;
+    }
+
+    func loadNextModule(){
+        let storyBoard = UIStoryboard(name:"Main", bundle: nil);
+        let vc = storyBoard.instantiateViewControllerWithIdentifier("AddWordsView")
+        presentViewController(vc, animated: true, completion: nil)
+    }
+
     
     // MARK PickerView delegates and data source
     
@@ -76,10 +92,11 @@ class REDSelectLanguageViewController : ViewController, UIPickerViewDataSource, 
         return self.languages.count
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
-        return self.languages[row] as! String
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return self.languages[row] as? String
     }
-    
+
+
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
     }
@@ -122,15 +139,12 @@ class REDSelectLanguageViewController : ViewController, UIPickerViewDataSource, 
     }
 
     @IBAction func startAddingWords(sender: AnyObject) {
-        let name : String = pickerView(self.lngPicker, titleForRow: 0, forComponent: 0)
+        let name : String! = pickerView(self.lngPicker, titleForRow: 0, forComponent: 0)
         let names : Array = name.componentsSeparatedByString("_")
-        REDWordsModel.sharedInstance.principalLanguage = names[0];
-        REDWordsModel.sharedInstance.secondaryLanguage = names[1];
 
-        let storyBoard = UIStoryboard(name:"Main", bundle: nil);
-        let vc = storyBoard.instantiateViewControllerWithIdentifier("AddWordsView") as! UIViewController
-//        let nextView : REDAddWordsViewController = REDAddWordsViewController()
-        presentViewController(vc, animated: true, completion: nil)
+        saveLanguagesSelected(names)
+        loadWordsSet()
+        loadNextModule()
     }
 
 }

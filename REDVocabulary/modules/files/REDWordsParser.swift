@@ -13,10 +13,9 @@ class REDWordsParser {
         results = NSMutableArray()
     }
 
-
     func parseWords (filePath : String) -> NSArray {
-        let content : String = ""
-        let fileContent : NSData = content.dataUsingEncoding(NSUTF8StringEncoding)!
+//        let content : String = ""
+//        let fileContent : NSData = content.dataUsingEncoding(NSUTF8StringEncoding)!
         let dir : String = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0]
         let newDir : String = dir.stringByAppendingString(filePath)
 

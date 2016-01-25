@@ -27,7 +27,26 @@ class REDAddWordsViewController : ViewController {
 
         loadLanguagesFile()
         setupLabels()
-        uncoveredSlot1()
+        uncoveredSlots()
+        addKeyboardObservers()
+    }
+
+    func addKeyboardObservers(){
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        notificationCenter.addObserver(self, selector:"keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        notificationCenter.addObserver(self, selector:"keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+    }
+
+    func keyboardWillShow(notification:NSNotification){
+        let userInfo = notification.userInfo!
+        let keyboardHeight = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue().height;
+
+    }
+
+    func keyboardWillHide(notification:NSNotification){
+        let userInfo = notification.userInfo!
+        let keyboardHeight = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue().height;
+
     }
 
     func loadLanguagesFile(){
@@ -40,8 +59,27 @@ class REDAddWordsViewController : ViewController {
         self.input2View.languageNameLabel.text = self.secondaryLanguage;
     }
 
-    func uncoveredSlot1(){
+    func uncoveredSlots(){
         self.input1View.coverButton.hidden = true;
         self.input2View.coverButton.hidden = true;
     }
+
+    @IBAction func addButtonTouched(sender: AnyObject) {
+        print("add taouched")
+        guard let text1 = self.input1View.wordTextView.text else{
+            return
+        }
+
+        guard let text2 = self.input2View.wordTextView.text else{
+            return
+        }
+
+        print(text1)
+        print(text2)
+    }
+
+    @IBAction func startButtonTouched(sender: AnyObject) {
+        print("start button touched")
+    }
+
 }

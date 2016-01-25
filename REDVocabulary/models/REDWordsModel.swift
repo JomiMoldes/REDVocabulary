@@ -24,9 +24,14 @@ class REDWordsModel {
 
     }
 
+    func setupWords(dic:NSDictionary){
+
+    }
+
+
     func getWordsForSaving() -> NSMutableDictionary {
-        var dic : NSMutableDictionary = NSMutableDictionary();
-        var wordsArr : NSMutableArray = NSMutableArray();
+        let dic : NSMutableDictionary = NSMutableDictionary();
+        let wordsArr : NSMutableArray = NSMutableArray();
 
         var i : Int
         for (i = 0; i < self.words.count; ++i) {
