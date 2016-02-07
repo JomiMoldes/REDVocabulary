@@ -20,4 +20,8 @@ struct REDConstants {
         static let HOUR = MINUTE * 60
         static let DAY = HOUR * 24
     }
+
+    struct DefaultInputTexts {
+        static let INSERT_WORD_HERE = "Insert your new word in -lng- here"
+    }
 }

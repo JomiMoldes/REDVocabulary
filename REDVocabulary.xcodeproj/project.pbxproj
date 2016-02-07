@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		45BAF0D6E5BCBC148379D9C9 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAF25C7F877C8CBD5E7648 /* Background.png */; };
+		45BAF215BB364EE76D43E080 /* REDWordsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF6A1DEEF5ED2D75C1233 /* REDWordsFactory.swift */; };
 		45BAF3BB767C275FF14DFF96 /* REDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF31C0764406F76FF49AD /* REDConstants.swift */; };
 		45BAF3D1199BBAD651F6DD5E /* REDUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAFEF34943BB380CB3331F /* REDUserDefaults.swift */; };
 		45BAF41970E1F4FCDB61AB25 /* REDWordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF12D71D586D10B00A207 /* REDWordsModel.swift */; };
@@ -20,9 +21,9 @@
 		45BAF8A3EFBDD446DB242C9E /* day_completed.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAF92E4DA4B49E40DA49EA /* day_completed.png */; };
 		45BAF99F5DBF49017AA2823B /* REDWordsConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF230E03326DD3F3E04EC /* REDWordsConfigManager.swift */; };
 		45BAF9C1B8578993B89EAAD9 /* REDAddWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAFB8A19E935A33692A5A4 /* REDAddWordsViewController.swift */; };
-		45BAFA7A17E5C79B836D8B97 /* REDAddWordsInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF72557F21C97140340A1 /* REDAddWordsInputView.swift */; };
 		45BAFAB0F00537E5E17F1E2C /* Background_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAFF3835DA9E25C253A138 /* Background_1.png */; };
 		45BAFAF56729BC31CEC9DF31 /* REDBasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAFF6A7D1C6594D42D7323 /* REDBasicButton.swift */; };
+		45BAFAFF50F231F085B93F72 /* REDInputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAFF49C51A680439714F89 /* REDInputTextView.swift */; };
 		45BAFB0A0C3908E76D51A166 /* REDWordsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF42DEC25A6B804BA8C77 /* REDWordsParser.swift */; };
 		45BAFB7C4D44891211F53DE4 /* REDInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF043154145EEDC284383 /* REDInputView.swift */; };
 		45BAFCC9B233D23B8F113A3C /* InputBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45BAF508212D8B33C47A01D4 /* InputBG@2x.png */; };
@@ -61,7 +62,7 @@
 		45BAF31C0764406F76FF49AD /* REDConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDConstants.swift; sourceTree = "<group>"; };
 		45BAF42DEC25A6B804BA8C77 /* REDWordsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDWordsParser.swift; sourceTree = "<group>"; };
 		45BAF508212D8B33C47A01D4 /* InputBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InputBG@2x.png"; sourceTree = "<group>"; };
-		45BAF72557F21C97140340A1 /* REDAddWordsInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDAddWordsInputView.swift; sourceTree = "<group>"; };
+		45BAF6A1DEEF5ED2D75C1233 /* REDWordsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDWordsFactory.swift; sourceTree = "<group>"; };
 		45BAF92E4DA4B49E40DA49EA /* day_completed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = day_completed.png; sourceTree = "<group>"; };
 		45BAFA00F2094527BE415369 /* REDGuessingWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDGuessingWordsViewController.swift; sourceTree = "<group>"; };
 		45BAFA4F5CACB269C680218A /* InputBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InputBG.png; sourceTree = "<group>"; };
@@ -75,6 +76,7 @@
 		45BAFEF34943BB380CB3331F /* REDUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDUserDefaults.swift; sourceTree = "<group>"; };
 		45BAFF01680206ED13BEC62D /* Background_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background_2.jpg; sourceTree = "<group>"; };
 		45BAFF3835DA9E25C253A138 /* Background_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background_1.png; sourceTree = "<group>"; };
+		45BAFF49C51A680439714F89 /* REDInputTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDInputTextView.swift; sourceTree = "<group>"; };
 		45BAFF6A7D1C6594D42D7323 /* REDBasicButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REDBasicButton.swift; sourceTree = "<group>"; };
 		488506EC1B3335500068D65E /* REDVocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = REDVocabulary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		488506F01B3335500068D65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				45BAFB8A19E935A33692A5A4 /* REDAddWordsViewController.swift */,
-				45BAF72557F21C97140340A1 /* REDAddWordsInputView.swift */,
 			);
 			path = addWords;
 			sourceTree = "<group>";
@@ -153,6 +154,7 @@
 				45BAF12D71D586D10B00A207 /* REDWordsModel.swift */,
 				45BAF31C0764406F76FF49AD /* REDConstants.swift */,
 				45BAFAEE5B153CA60C0FF497 /* REDWord.swift */,
+				45BAF6A1DEEF5ED2D75C1233 /* REDWordsFactory.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -224,6 +226,7 @@
 			children = (
 				45BAF043154145EEDC284383 /* REDInputView.swift */,
 				48FCE3581B408AB40038AA9B /* REDInputView.xib */,
+				45BAFF49C51A680439714F89 /* REDInputTextView.swift */,
 			);
 			path = inputViews;
 			sourceTree = "<group>";
@@ -477,7 +480,6 @@
 				45BAF99F5DBF49017AA2823B /* REDWordsConfigManager.swift in Sources */,
 				45BAF5EA04CEBD208371E814 /* REDSelectLanguageViewController.swift in Sources */,
 				45BAF9C1B8578993B89EAAD9 /* REDAddWordsViewController.swift in Sources */,
-				45BAFA7A17E5C79B836D8B97 /* REDAddWordsInputView.swift in Sources */,
 				45BAFB7C4D44891211F53DE4 /* REDInputView.swift in Sources */,
 				45BAF45BD4737162965FE3CC /* REDGuessingWordsViewController.swift in Sources */,
 				45BAFB0A0C3908E76D51A166 /* REDWordsParser.swift in Sources */,
@@ -487,6 +489,8 @@
 				45BAF3BB767C275FF14DFF96 /* REDConstants.swift in Sources */,
 				45BAFF6AA59C1FA9CE13DED9 /* REDWord.swift in Sources */,
 				45BAFD51126148D2EDE2AF49 /* REDDateUtils.swift in Sources */,
+				45BAFAFF50F231F085B93F72 /* REDInputTextView.swift in Sources */,
+				45BAF215BB364EE76D43E080 /* REDWordsFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

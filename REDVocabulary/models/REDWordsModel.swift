@@ -25,9 +25,27 @@ class REDWordsModel {
     }
 
     func setupWords(dic:NSDictionary){
+        let words = dic["words"] as! NSArray;
+        for(var i = 0; i < words.count; i++){
+            let element = words[i] as! NSDictionary;
+            let word : REDWord = REDWord();
+            word.lng1 = element["lng1"] as! String;
+            word.lng2 = element["lng2"] as! String;
+            word.lastShown = element["lastShown"] as! NSTimeInterval;
+            word.frequency = element["frequency"] as! NSInteger;
+            word.successful = element["successful"] as! NSInteger;
+            word.refresh(NSDate());
+            addWord(word);
+        }
 
     }
 
+    func addWord(word:REDWord){
+        if(!self.words.containsObject(word)){
+            self.words.addObject(word)
+            print("word added", word.lng1);
+        }
+    }
 
     func getWordsForSaving() -> NSMutableDictionary {
         let dic : NSMutableDictionary = NSMutableDictionary();
@@ -35,22 +53,14 @@ class REDWordsModel {
 
         var i : Int
         for (i = 0; i < self.words.count; ++i) {
-//            RPWord *word = self.words[i];
-//            NSLog(word.toDelete ? @"Yes" : @"No");
-//            if (word.toDelete) {
-//                [self.listForToday removeObject:word];
-//                [self.words removeObject:word];
-//                i--;
-//                continue;
-//            }
-//            NSMutableDictionary *wordDic = [[NSMutableDictionary alloc] init];
-//            wordDic[@"lng1"] = word.lng1;
-//            wordDic[@"lng2"] = word.lng2;
-//            wordDic[@"lastShown"] = word.lastShown;
-//            wordDic[@"frequency"] = word.frequency;
-//            wordDic[@"successful"] = word.successful;
-//
-//            [wordsArr addObject:wordDic];
+            let word : REDWord = self.words[i] as! REDWord;
+            var wordDic : NSMutableDictionary = NSMutableDictionary();
+            wordDic["lng1"] = word.lng1;
+            wordDic["lng2"] = word.lng2;
+            wordDic["lastShown"] = word.lastShown;
+            wordDic["frequency"] = word.frequency;
+            wordDic["successful"] = word.successful;
+            wordsArr.addObject(wordDic);
         }
         dic["words"] = wordsArr;
 

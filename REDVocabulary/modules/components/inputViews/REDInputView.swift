@@ -6,17 +6,18 @@
 import Foundation
 import UIKit
 
-@IBDesignable class REDInputView : UIView {
+@IBDesignable class REDInputView : UIView, UITextViewDelegate {
     
     var view : UIView!
     
-    @IBOutlet weak var wordTextView: UITextView!
+    @IBOutlet weak var wordTextView: REDInputTextView!
     @IBOutlet weak var languageNameLabel: UILabel!
     @IBOutlet weak var coverButton: UIButton!
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         xibSetup()
+        addObservers()
     }
     
     func xibSetup(){
@@ -34,9 +35,64 @@ import UIKit
         return nibView
     }
 
+    func addObservers() {
+        self.wordTextView.delegate = self;
+    }
+
+    func onTextTapped() {
+        self.wordTextView.text = ""
+    }
+
+    func setupOriginalText(label : String) {
+        self.wordTextView.originalText = label
+        setupContentText(label)
+    }
+
+    func setupContentText(text : String) {
+        self.wordTextView.text = text
+    }
+
+    func hasValidText() -> Bool{
+        if(self.wordTextView.text == self.wordTextView.originalText){
+            return false;
+        }
+        if(self.wordTextView.text == ""){
+            return false;
+        }
+        return true;
+    }
+
+    func refresh(){
+        self.wordTextView.text = self.wordTextView.originalText;
+    }
+
+
+    /// Protocols
+
+    func textViewShouldBeginEditing(textView: UITextView) -> Bool {
+        if self.wordTextView.text == self.wordTextView.originalText {
+            self.wordTextView.text = ""
+        }
+        return true
+    }
+
+    func textViewShouldEndEditing(textView: UITextView) -> Bool {
+        if self.wordTextView.text == "" {
+            self.wordTextView.text = self.wordTextView.originalText
+        }
+        return true
+    }
+
+
+
+    /// @IBActions
 
     @IBAction func coverButtonTouched(sender: AnyObject) {
         print("touched")
+    }
+
+    @IBAction func inputTextTapped(sender: AnyObject) {
+
     }
 
 

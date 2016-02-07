@@ -30,17 +30,6 @@ class REDJSONFileManager {
                 print("no se pudo crear el archivo: " + self.filePath)
             }
             updateFile(name, getDefaultJSONContent())
-//            do{
-//                try fm.createFileAtPath(self.filePath, contents:nil, attributes: nil)
-//
-//            }catch let error as NSError{
-//                print("no se pudo crear el archivo: " + error.description)
-//            }
-//            do{
-//                try updateFile(name, getDefaultJSONContent())
-//            }catch let error as NSError{
-//                print("no update for the file " + error.description)
-//            }
         }
     }
 
@@ -61,23 +50,18 @@ class REDJSONFileManager {
             let fileHandler = NSFileHandle(forWritingAtPath: path)
 
             fileHandler!.writeData(data!)
-//            do{
-//                try fileHandler!.writeData(data!)
-//            }catch{
-//                print("not possible to update file ")
-//            }
         }
     }
 
     func getWordsFromJSON(fileName:String)->NSDictionary{
         let fm = NSFileManager.defaultManager()
         if let data : NSData = fm.contentsAtPath(fileName){
-            let json:JSON = JSON(data)
+            let json:JSON = JSON(data:data)
             print(json.description)
-
+            let dic = json.rawValue as! NSDictionary;
+            return dic;
         }
         return NSDictionary()
     }
-
 
 }

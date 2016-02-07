@@ -44,7 +44,6 @@ class REDSelectLanguageViewController : ViewController, UIPickerViewDataSource, 
         super.prepareForSegue(segue, sender: sender)
     }
 
-
     func refreshOptions(){
         let defaults = REDUserDefaults.sharedInstance;
         self.languages = defaults.getLanguagesCombinations();
@@ -81,7 +80,7 @@ class REDSelectLanguageViewController : ViewController, UIPickerViewDataSource, 
         presentViewController(vc, animated: true, completion: nil)
     }
 
-    
+
     // MARK PickerView delegates and data source
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {

@@ -11,8 +11,6 @@ class REDWordsConfigManager {
 
     static let sharedInstance = REDWordsConfigManager()
 
-
-
     private init(){
 
     }
@@ -29,10 +27,16 @@ class REDWordsConfigManager {
         return
     }
 
-    func saveWordsInFile(name:String, content:String){
+    func saveWordsInFile(name:String){
         let jsonManager : REDJSONFileManager = REDJSONFileManager();
         let json = getJSONToSave()
         jsonManager.updateFile(name, json.description);
+    }
+
+    func saveWords(){
+        let jsonManager : REDJSONFileManager = REDJSONFileManager();
+        let json = getJSONToSave()
+        jsonManager.updateFile(getLanguagesFilePath(), json.description);
     }
 
     func getJSONToSave()->JSON{

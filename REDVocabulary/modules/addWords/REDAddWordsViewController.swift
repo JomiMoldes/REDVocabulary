@@ -57,6 +57,10 @@ class REDAddWordsViewController : ViewController {
     func setupLabels(){
         self.input1View.languageNameLabel.text = self.principalLanguage;
         self.input2View.languageNameLabel.text = self.secondaryLanguage;
+
+        let originalText: String = REDConstants.DefaultInputTexts.INSERT_WORD_HERE;
+        self.input1View.setupOriginalText(originalText.stringByReplacingOccurrencesOfString("-lng-", withString: self.principalLanguage))
+        self.input2View.setupOriginalText(originalText.stringByReplacingOccurrencesOfString("-lng-", withString: self.secondaryLanguage))
     }
 
     func uncoveredSlots(){
@@ -64,8 +68,14 @@ class REDAddWordsViewController : ViewController {
         self.input2View.coverButton.hidden = true;
     }
 
+
+
+
+
+
+    /// @IBActions
+
     @IBAction func addButtonTouched(sender: AnyObject) {
-        print("add taouched")
         guard let text1 = self.input1View.wordTextView.text else{
             return
         }
@@ -73,9 +83,18 @@ class REDAddWordsViewController : ViewController {
         guard let text2 = self.input2View.wordTextView.text else{
             return
         }
+        if(!self.input1View.hasValidText()){
+            return;
+        }
+        if(!self.input2View.hasValidText()){
+            return;
+        }
 
-        print(text1)
-        print(text2)
+        let word = REDWordsFactory().createWord(text1, text2);
+        REDWordsModel.sharedInstance.addWord(word);
+
+        self.input1View.refresh();
+        self.input2View.refresh();
     }
 
     @IBAction func startButtonTouched(sender: AnyObject) {
